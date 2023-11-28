@@ -6,17 +6,20 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LoginComponent } from './login/login.component';
-
+import { DatabindingComponent } from './databinding/databinding.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [ //component/pipe/directive
     AppComponent,
     HomeComponent,
     SignUpComponent,
-    LoginComponent
+    LoginComponent,
+    DatabindingComponent
   ],
   imports: [ //modules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+     FormsModule // in two way data binding we have to need of this
   ],
   providers: [],
   bootstrap: [AppComponent]
